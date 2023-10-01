@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(252, 237, 215);
+}
+.logo{
+    width: 100px;
+    height: 90px;
+    padding-left: 10px;
+}
+#header{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    margin: 5px 8px;
+    border-radius: 10px;
+    box-shadow:0 5px 15px rgb(0,0,0,0.5);
+    background-color: rgb(240, 226, 206);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(78, 78, 49);
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(240, 141, 13);
+}
+
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(234, 184, 119);
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+}
+
+#hero{
+     
+    background: url(model1.png);
+    background-color: blanchedalmond;
+    height: 60vh;
+    width: 100%;
+    background-position: top 40% right 0;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* border: 1px solid black; */
+    padding: 0 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.5);
+}
+
+#hero h4{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 400;
+    color: rgb(100, 91, 77);
+}
+#hero h2{
+    font-size: 29px;
+    padding: 10px 0;
+    color: rgb(243, 175, 92);
+}
+#hero h1{
+    font-size: 32px;
+    color: rgba(240, 183, 77, 0.7);
+    margin-top: -10px;
+}
+#hero p{
+    font-size: 15px;
+    color: rgb(68, 62, 52);
+    padding: 15px 0;
+}
+#hero button{
+    background:blue;
+    width: 90px;
+    height: 30px;
+    border-radius: 60px;
+    background-position: cover;
+    color: aqua;
+    border: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+#hero button:hover{
+    color: blue;
+    background-color: aqua;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.fe-box{
+    display: flex;
+    margin: 10px;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.pro{
+    border: 1px solid rgb(131, 129, 125);
+    box-shadow:0px 0px 20px white,0px 0px 20px black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    transition: 0.4s ease;
+}
+.pro:hover{
+    box-shadow:0px 0px 10px white,0px 0px 10px black;
+}
+
+#product1 h1{
+   color:rgb(239, 195, 130);
+   font-size: 39px;
+
+}
+
+.fe-box1{
+    display: flex;
+    margin: 20px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.pro1{
+    border: 1px solid rgb(131, 129, 125);
+    box-shadow:0px 0px 10px white,0px 0px 10px black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+    transition: 0.4s ease;
+}
+.pro1:hover{
+    box-shadow:0px 0px 20px white,0px 0px 20px black;
+}
+#product1 .fe-box1 .pro1{
+    position: relative;
+}
+
+ #product1 .pro1 .des i{
+    font-size: 12px;
+    color: rgb(243, 181, 24)
+}
+.fe-box1 .pro1 a{
+    position: absolute; 
+    bottom: 2px; 
+    right: 10px;
+     border: 1px solid rgb(211, 185, 185); 
+     color: rgb(6, 121, 252); 
+     background-color: rgb(181, 205, 243); 
+     border-radius: 50px; 
+     font-weight: 500; 
+     width: 40px;
+      height: 40px; 
+      line-height:40px; 
+      padding-left:10px;
+      transition: 0.3s ease;
+}
+
+.fe-box1 .pro1 a:hover{
+    font-size: 19px;
+    padding-left: 9px;
+
+}
+
+#banner{
+
+    height: 250px;
+    width: 100%;
+    box-shadow: 0 0 15px rgb(245, 232, 161);
+    padding: 70px 0;
+    background:url(banner1.png);
+}
+#banner h3
+{
+    margin-bottom: 15px;
+    color: rgb(234, 189, 78);
+} 
+#banner h1{
+    color:rgb(243, 175, 92);
+    font-size:32px ;
+}
+#banner h1 span{
+    color: rgb(241, 100, 100);
+}
+
+#banner button{
+
+    background:blue;
+    width: 90px;
+    height: 30px;
+    border-radius: 60px;
+    background-position: cover;
+    color: aqua;
+    border: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 18px;
+
+}
+#banner button:hover{
+    color: blue;
+    background-color: aqua;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:url(m1.jpg);
+    min-width: 580px;
+    height: 50vh;
+    /* border: 1px solid black; */
+    padding: 30px;
+}
+#sm-banner h4
+{
+    color: rgb(245, 217, 217);
+    padding: 5px;
+    font-size: 20px;
+}
+
+#sm-banner h2
+{
+    color: rgb(250, 226, 208);
+    padding: 5px;
+    font-size: 30px;
+}
+
+
+#sm-banner span{
+   color: rgb(239, 228, 223);
+   padding: 5px;
+   font-size: 20px;
+}
+
+#sm-banner button{
+
+    /* background:blue; */
+    width: 120px;
+    height: 30px;
+    border-radius: 60px;
+    background-position: cover;
+    color: rgb(30, 33, 33);
+    border: 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 18px;
+
+}
+#sm-banner button:hover{
+    color: blue;
+    background-color: aqua;
+    box-shadow: 0 0 12px blue;
+}
+
+#sm-banner .banner-box2{
+    background:url(m2.jpg);
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:url(m3.jpg);
+    min-width: 30%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner3 h2{
+    color: rgb(247, 233, 222);
+    padding: 5px;
+    font-size: 21px;
+}
+#banner3 h3{
+    color: rgb(241, 63, 32);
+    padding: 5px;
+    font-size: 17px;
+}
+
+#banner3 .banner-box2{
+    background:url(m4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner3 .banner-box3{
+    background:url(m6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner4{
+    background:url(banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 20vh;
+}
+#banner4 h1{
+    padding: 40px;
+}
+#banner4 p{
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+#banner4 p span{
+    color: chocolate;
+}
+#banner4 div{
+    position: absolute;
+    right: 70px;
+    bottom: 55px;
+    
+    
+}
+#banner4 div input{
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    background-color: rgb(242, 205, 205);
+    border: 0;
+    /* border-radius: 5px; */
+    padding: 12px;
+    /* box-shadow: 0 0 10px rgb(70, 66, 66),1px 1px 12px rgb(34, 34, 37); */
+}
+#banner4 div button{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+
+    background-color: rgb(17, 237, 76);
+    border: 0;
+    /* border-radius: 5px; */
+    margin-left: -4.5px;
+    font-weight: 500;
+    /* box-shadow: 0 0 10px rgb(70, 66, 66),1px 1px 12px rgb(34, 34, 37); */
+
+}
+
+#banner4 div button:hover{
+   font-size: 21px;
+   font-weight: 600;
+   background-color: blueviolet;
+   color: aliceblue;
+   /* box-shadow:1px 1px 12px rgb(63, 68, 70); */
+
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    background-color: rgb(250, 219, 179);
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 49px;
+}
+
+footer .col1 .row img{
+    width: 140px;
+    height: 60px;
+}
+footer .col1 img{
+    width: 230px;
+    height: 60px;
+}
+footer .col a{
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+footer .col p{
+    padding: 2px;
+}
+footer .col h4{
+    padding: 20px 0;
+    font-size: 20px;
+}
+
