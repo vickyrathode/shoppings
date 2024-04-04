@@ -1,0 +1,175 @@
+/* Your existing CSS styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(252, 237, 215);
+}
+
+.logo {
+    width: 100px;
+    height: 90px;
+    padding-left: 10px;
+}
+
+#header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    margin: 5px 8px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    background-color: rgb(240, 226, 206);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(78, 78, 49);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(240, 141, 13);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(234, 184, 119);
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section p {
+    width: 100%;
+}
+
+.team-section {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.team-member {
+    text-align: center;
+    cursor: pointer;
+}
+
+.team-member img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.team-member .info {
+    display: none;
+}
+
+.team-member h3 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.team-member h3:hover {
+    color: #007bff;
+}
+
+/* .tasks {
+    display: none;
+}
+
+.active .tasks {
+    display: block;
+} */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(250, 219, 179);
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 49px;
+}
+
+footer .col1 .row img {
+    width: 140px;
+    height: 60px;
+}
+
+footer .col1 img {
+    width: 230px;
+    height: 60px;
+}
+
+footer .col a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+
+footer .col p {
+    padding: 2px;
+}
+
+footer .col h4 {
+    padding: 20px 0;
+    font-size: 20px;
+}

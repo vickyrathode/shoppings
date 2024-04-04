@@ -12,12 +12,15 @@
         <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
         <div>
             <ul id="navbar">
-                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="cart.html"></a>
+                   <div id="user-info-container">
+                     <div id="user-info"></div>
+                   </div></li>
                 
             </ul>
         </div>
@@ -28,7 +31,7 @@
         <h2>Super value deals</h2>
         <h1>On all products</h1>
         <p>Save more with coupans & up to 70% off!</p>
-        <button>Shop Now</button>
+        <button><a href="shop.html" class="shop"> Shop Now</a></button>
 
     </section>
 
@@ -44,6 +47,25 @@
         </div> 
     </section>
 
+    
+    <center> <section id="cart">
+      <h2>Your Cart</h2>
+      <div id="purchase-message"></div>
+      <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+      <div id="cart-total">
+        <p>Total: <span id="total">0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </section>
+     <h2>Available Products</h2>
+    <section id="products">
+     
+      <!-- More products can be added here -->
+    </section>
+</center>
+
     <section id="product1" class="section-p1">
        <center>
         <h1>Featured Products</h1>
@@ -53,8 +75,8 @@
             <div class="pro1">
                 <img src="f1.jpg" alt="" height="190px" width="190px">
                 <div class="des">
-                <span>adidas</span>
-                <h5>Cartoon Astronaut T-shirt</h5>
+                <span>Nike</span>
+                <h5>Cartoon shirt</h5>
                 <div class="star">
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
@@ -62,16 +84,32 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$28</h4>
             </div>
-            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+           <button class="Buy">Buy Now</button>
             </div>
     
+            
+            <div class="pro1"><img src="f18.jpg" alt="" height="190px" width="190px">
+                <div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astronaut shirt</h5>
+                <div class="star">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$38</h4>
+            </div>
+          <button class="Buy">Buy Now</button>
+        </div>
 
             <div class="pro1"><img src="f2.jpg" alt="" height="190px" width="190px">
                 <div class="des">
-                <span>adidas</span>
-                <h5>Cartoon Astronaut T-shirt</h5>
+                <span>puma</span>
+                <h5> poly shirt</h5>
                 <div class="star">
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
@@ -79,14 +117,14 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$12</h4>
             </div>
-            <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+          <button class="Buy">Buy Now</button>
         </div>
 
             <div class="pro1"><img src="f3.jpg" alt="" height="190px" width="190px"><div class="des">
-                <span>adidas</span>
-                <h5>Cartoon Astronaut T-shirt</h5>
+                <span>lord</span>
+                <h5>fibric shirt</h5>
                 <div class="star">
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
@@ -94,14 +132,14 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$18</h4>
             </div>
-            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+           <button class="Buy">Buy Now</button>
         </div>
 
             <div class="pro1"><img src="f4.jpg" alt="" height="190px" width="190px"><div class="des">
-                <span>adidas</span>
-                <h5>Cartoon Astronaut T-shirt</h5>
+                <span>clear cut</span>
+                <h5>half sleeve shirt</h5>
                 <div class="star">
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
@@ -109,14 +147,14 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$25</h4>
             </div>
-            <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+           <button class="Buy">Buy Now</button>
         </div>
 
             <div class="pro1"><img src="f5.jpg" alt="" height="190px" width="190px"><div class="des">
-                <span>adidas</span>
-                <h5>Cartoon Astronaut T-shirt</h5>
+                <span>ajuba</span>
+                <h5>Cartoon shirt</h5>
                 <div class="star">
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
@@ -124,20 +162,24 @@
                     <i class="far fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$21</h4>
             </div>
-            <a href="#"><i class="fal fa-shopping-cart cart"></i></a></div>
+           <button class="Buy">Buy Now</button></div>
             
           </div> 
     </section>
 
+     <center>
+        <h1>All items</h1>
+        <p>Special Collection New Morden Design</p>
+    </center> 
     <section id="product1">
          <div class="fe-box1">  
              <div class="pro1">
-                 <img src="f6.jpg" alt="" height="190px" width="190px">
+                 <img src="lop2.jpeg" alt="" height="190px" width="190px">
                  <div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+                 <span>Zoook</span>
+                 <h5>Mouse</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -145,16 +187,16 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$14</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-             </div>
+            <button class="Buy">Buy Now</button>
+            </div>
      
  
-             <div class="pro1"><img src="f7.jpg" alt="" height="190px" width="190px">
+             <div class="pro1"><img src="lop5.jpeg" alt="" height="190px" width="190px">
                  <div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+                 <span>Zebronic</span>
+                 <h5>Key board</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -162,14 +204,14 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$18</h4>
              </div>
-             <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+           <button class="Buy">Buy Now</button>
          </div>
  
-             <div class="pro1"><img src="f8.jpg" alt="" height="190px" width="190px"><div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+             <div class="pro1"><img src="toy1.jpeg" alt="" height="190px" width="190px"><div class="des">
+                 <span>Toyplays</span>
+                 <h5>Toy doll</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -177,14 +219,45 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$38</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
+         </div>
+         
+         <div class="pro1"><img src="iphone.webp" alt="" height="190px" width="190px">
+            <div class="des">
+            <span>Apple</span>
+            <h5>i phone 15</h5>
+            <div class="star">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$99</h4>
+        </div>
+      <button class="Buy">Buy Now</button>
+    </div>
+ 
+             <div class="pro1"><img src="elect2.jpeg" alt="" height="190px" width="190px"><div class="des">
+                 <span>Aooh</span>
+                 <h5>Head phone</h5>
+                 <div class="star">
+                     <i class="far fa-star"></i>
+                     <i class="far fa-star"></i>
+                     <i class="far fa-star"></i>
+                     <i class="far fa-star"></i>
+                     <i class="far fa-star"></i>
+                 </div>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$48</h4>
+             </div>
+            <button class="Buy">Buy Now</button>
          </div>
  
-             <div class="pro1"><img src="f1.jpg" alt="" height="190px" width="190px"><div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+             <div class="pro1"><img src="elect6.jpeg" alt="" height="190px" width="190px"><div class="des">
+                 <span>usha</span>
+                 <h5>refreserator</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -192,33 +265,15 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$87</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-         </div>
- 
-             <div class="pro1"><img src="f3.jpg" alt="" height="190px" width="190px"><div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
-                 <div class="star">
-                     <i class="far fa-star"></i>
-                     <i class="far fa-star"></i>
-                     <i class="far fa-star"></i>
-                     <i class="far fa-star"></i>
-                     <i class="far fa-star"></i>
-                 </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
-             </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a></div>
+            <button class="Buy">Buy Now</button></div>
              
            </div> 
+           
      </section>
 
      <section id="banner">
-        <center><h3>Repair Services </h3>
-        <h1>Up to <span>70% off</span> - All t-shirts & Accessories</h1>
-        <button>Explore</button>
-        </center>
      </section>
 
      <section id="product1" class="section-p1">
@@ -239,9 +294,9 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$31</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
              </div>
      
  
@@ -256,9 +311,9 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$15</h4>
              </div>
-             <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+           <button class="Buy">Buy Now</button>
          </div>
  
              <div class="pro1"><img src="f13.jpg" alt="" height="190px" width="190px"><div class="des">
@@ -271,9 +326,9 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$19</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
          </div>
  
              <div class="pro1"><img src="f14.jpg" alt="" height="190px" width="190px"><div class="des">
@@ -286,9 +341,9 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$27</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
          </div>
  
              <div class="pro1"><img src="f15.jpg" alt="" height="190px" width="190px"><div class="des">
@@ -301,21 +356,43 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$28</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a></div>
+            <button class="Buy">Buy Now</button>
+            </div>
+
+            
+            <div class="pro1"><img src="f19.webp" alt="" height="190px" width="190px"><div class="des">
+                <span>adidas</span>
+                <h5>Cartoon Astronaut T-shirt</h5>
+                <div class="star">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$18</h4>
+            </div>
+           <button class="Buy">Buy Now</button>
+        </div>
              
            </div> 
      </section>
 
-     <section id="product1" class="section-p1"> 
      
+
+     <section id="product1" class="section-p1"> 
+      <center>
+         <h1>New items</h1>
+         <p>Dam cool Collection New Morden Design</p>
+     </center> 
          <div class="fe-box1">  
              <div class="pro1">
-                 <img src="f11.jpg" alt="" height="190px" width="190px">
+                 <img src="lop3.jpeg" alt="" height="190px" width="190px">
                  <div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+                 <span>Pan</span>
+                 <h5>multi mouse</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -323,16 +400,18 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$15</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
              </div>
+
+             
      
  
-             <div class="pro1"><img src="f15.jpg" alt="" height="190px" width="190px">
+             <div class="pro1"><img src="lop4.jpeg" alt="" height="190px" width="190px">
                  <div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+                 <span>intel</span>
+                 <h5>lighting keyboard</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -340,14 +419,14 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$16</h4>
              </div>
-             <a href="#" ><i class="fal fa-shopping-cart cart"></i></a>
+           <button class="Buy">Buy Now</button>
          </div>
  
-             <div class="pro1"><img src="f16.jpg" alt="" height="190px" width="190px"><div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+             <div class="pro1"><img src="t3.jpg" alt="" height="190px" width="190px"><div class="des">
+                 <span>zinc</span>
+                 <h5>girls toy</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -355,14 +434,14 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$28</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
          </div>
  
-             <div class="pro1"><img src="f17.webp" alt="" height="190px" width="190px"><div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+             <div class="pro1"><img src="g1.jpg" alt="" height="190px" width="190px"><div class="des">
+                 <span>a one </span>
+                 <h5>top</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -370,14 +449,14 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$7</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            <button class="Buy">Buy Now</button>
          </div>
  
-             <div class="pro1"><img src="f18.jpg" alt="" height="190px" width="190px"><div class="des">
-                 <span>adidas</span>
-                 <h5>Cartoon Astronaut T-shirt</h5>
+             <div class="pro1"><img src="k1.jpg" alt="" height="190px" width="190px"><div class="des">
+                 <span>ozin</span>
+                 <h5>kids shirt</h5>
                  <div class="star">
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
@@ -385,9 +464,25 @@
                      <i class="far fa-star"></i>
                      <i class="far fa-star"></i>
                  </div>
-                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$78</h4>
+                 <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$8</h4>
              </div>
-             <a href="#"><i class="fal fa-shopping-cart cart"></i></a></div>
+            <button class="Buy">Buy Now</button>
+            </div>
+            
+            <div class="pro1"><img src="elect8.jpeg" alt="" height="190px" width="190px"><div class="des">
+                <span>boat</span>
+                <h5>a123 42 hour</h5>
+                <div class="star">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h4 style="font-size: 15px;padding-top: 7px; font-weight: 700; color: blue;">$20</h4>
+            </div>
+           <button class="Buy">Buy Now</button>
+        </div>
              
            </div> 
      </section>
@@ -483,16 +578,7 @@
         
        </div>
 
-   <!-- <div class="col"> 
-      <h4>Install App</h4>
-       <p>From App Store or google Play</p>
-          <div class="row">
-            <img src="appstore (1).png" alt="" width="12%">
-            <img src="playstore.png" alt="" width="10%" >
-        </div>
-    <p>Secured Payment Gateways</p>
-    <img src="appstore (2).png" alt="" width="20%">
-</div> -->
+ 
 
     </footer>
     <center>
